@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FirstModule</class>
+ <widget class="QWidget" name="FirstModule">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FirstModule</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QCalendarWidget" name="calendarWidget"/>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <row>
+      <property name="text">
+       <string>asf</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>asfsfa</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Новая строка</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>asfasfasf</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

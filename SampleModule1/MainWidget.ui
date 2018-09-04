@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1272</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Права и роли</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#roleAndAttributesTab,
+QWidget#planeTypesTab,
+QWidget#flightAreaTab,
+QWidget#centralWidget {
+background-color: rgb(255, 255, 255);
+}
+
+QSplitter::handle:horizontal
+{
+	image: url(:/scholar/Resources/dots_vertical.png);
+}
+
+QSplitter::handle:vertical
+{
+	image: url(:/scholar/Resources/dots_horizontal.png);
+}
+
+QListView, QTreeView, QTableView, QFrame#attributesControlPanel, QFrame#rolesControlPanel
+{
+    border: 1px solid lightgray;
+    border-radius: 0px;
+}
+
+QTableView#rankView, QTableView#positionView, QTableView#pilotClassView
+{
+    border-left: 0px solid gray;
+}
+
+QLineEdit {
+     border: 1px solid lightgray;
+     border-radius: 0px;
+	 padding: 1 1 2 1;
+ }
+
+QTabBar::tab
+{
+	background-color: rgb(255, 255, 255);
+    border: 1px solid lightgray;
+	padding: 4 10 4 10;
+}
+
+QTabBar::tab:selected
+{
+	border-bottom: 1px;
+}
+
+QTabBar::tab:!selected
+{
+	background-color: rgb(229, 229, 229);
+}
+
+QLabel#planePictureLabel
+{
+	border: 1px solid gray;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="RolesAndRanks" name="rolesAndAttributesImpl" native="true"/>
+   </item>
+  </layout>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/connect.png</normaloff>:/images/images/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Подключиться</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/database_go.png</normaloff>:/images/images/database_go.png</iconset>
+   </property>
+   <property name="text">
+    <string>Экспорт</string>
+   </property>
+  </action>
+  <action name="actionWeaponLoadsEditor">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/images/bomb.png</normaloff>:/images/images/bomb.png</iconset>
+   </property>
+   <property name="text">
+    <string>Загрузки АСП</string>
+   </property>
+  </action>
+  <action name="actionRecalcStats">
+   <property name="text">
+    <string>Обновить учет</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>RolesAndRanks</class>
+   <extends>QWidget</extends>
+   <header>rolesandranks/rolesandranks.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

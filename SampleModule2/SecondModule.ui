@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecondModule</class>
+ <widget class="QWidget" name="SecondModule">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>802</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SecondModule</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>asf</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Новый столбец</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>asf</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>asffasf</string>
+       </property>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>sf</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>sdgsdgsdgsdgsdg</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>sdfghsdfghsdg</string>
+        </property>
+       </item>
+      </item>
+     </item>
+     <item>
+      <property name="text">
+       <string>sdgsdgsdgsdgsdg</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
