@@ -1,0 +1,7 @@
+/*.user
+/bin/*.exe
+/bin/*.manifest
+*.dll
+*.exp
+/bin/subviews_one/*.lib
+/bin/subviews_two/*.lib
